@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- 只写了一个简单的html文件测试后端的功能开发 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生信息管理系统</title>
+</head>
+<body bgcolor="#6495ed" align="center">
+<h1>欢迎来到学生信息管理系统！</h1>
+<form action="/login/Student" method="post">
+    <div>
+        学号 ：
+        <input type="text" name="UID">
+    </div>
+    <div>
+        姓名 ：
+        <input type="text" name="UserName">
+    </div>
+    <div>
+        课程 ：
+        <input type="text" name="CourseName">
+    </div>
+    <div>
+        成绩 ：
+        <input type="text" name="Score">
+    </div>
+    <input type="submit" value="添加" >
+</form>
+<br>
+<br>
+<br>
+<form action="/login/Student/modify" method="get">
+    <div>
+        学号 ：
+        <input type="text" name="UID">
+    </div>
+    <div>
+        姓名 ：
+        <input type="text" name="UserName">
+    </div>
+    <div>
+        课程 ：
+        <input type="text" name="CourseName">
+    </div>
+    <div>
+        成绩 ：
+        <input type="text" name="Score">
+    </div>
+    <div>
+        <input type="submit" value="修改">
+    </div>
+</form>
+<br>
+<br>
+<br>
+<form action="/login/Student/delete" method="get">
+    <div>
+        学号 ：
+        <input type="text" name="UID">
+    </div>
+    <div>
+        <input type="submit" value="删除">
+    </div>
+</form>
+<br>
+<br>
+<br>
+<form action="/login/Student" method="get">
+    <div>
+        查看学生信息数据库表
+        <input type="submit" value="查看">
+    </div>
+</form>
+</body>
+</html>
